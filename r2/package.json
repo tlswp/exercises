@@ -29,7 +29,7 @@
     "dev-mode": "npm-run-all --parallel server watch",
     "postinstall": "npm i -g live-server html-validate jshint",
     "run-webpack": "webpack --mode production",
-    "build": "npm-run-all validate-html jshint stylelint run-webpack"
+    "build": "npm-run-all validate-html stylelint run-webpack"
   },
   "browserslist": "> 0.25%, not dead",
   "author": "Kalagin Ivan",
