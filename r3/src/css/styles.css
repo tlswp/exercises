@@ -4,6 +4,7 @@ body {
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
+
 .weather_widget {
   border-radius: 1em;
   padding: 1em;
@@ -20,27 +21,34 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .weather_widget.sun {
   background-image: url('../img/sky.jpg');
 }
+
 .weather_widget.clouds {
   background-image: url('../img/clouds.jpg');
 }
+
 .weather_widget.rain {
   background-image: url('../img/rain.jpg');
 }
+
 .weather_type.sun {
   background-image: url('../img/sun.png');
   animation: sun 2s infinite;
 }
+
 .weather_type.clouds {
   background-image: url('../img/cloudy.png');
   animation: cloud 3s infinite;
 }
+
 .weather_type.rain {
   background-image: url('../img/watering.png');
   animation: rain 2s infinite;
 }
+
 .weather_type {
   transition: 1s;
   background-repeat: no-repeat;
@@ -52,9 +60,11 @@ body {
   0% {
     transform: translateY(-0.3em);
   }
+
   50% {
     transform: translateY(0em);
   }
+
   100% {
     transform: translateY(-0.3em);
   }
@@ -63,9 +73,11 @@ body {
   0% {
     transform: scale(0.95);
   }
+
   50% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(0.95);
   }
@@ -74,30 +86,36 @@ body {
   0% {
     transform: translateX(-0.3em);
   }
+
   50% {
     transform: translateX(0em);
   }
+
   100% {
     transform: translateX(-0.3em);
   }
 }
+
 .city {
   grid-area: 1 / 1 / 3 / 3;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
 }
+
 .deg {
   grid-area: 3 / 1 / 5 / 3;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
 }
+
 .wind {
   grid-area: 5 / 1 / 7 / 5;
   display: flex;
   align-items: center;
 }
+
 .humidity {
   grid-area: 7 / 1 / 9 / 5;
   display: flex;

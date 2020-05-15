@@ -1,0 +1,33 @@
+{
+  "extends": "airbnb",
+  "plugins": ["react"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/destructuring-assignment": "off",
+    "react/jsx-filename-extension": "off",
+    "react/require-default-props": "off",
+    "linebreak-style": "off",
+    "import/newline-after-import": "off",
+    "comma-dangle": "off",
+    "object-curly-newline": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/order": "off",
+    "react/prefer-stateless-function": "off",
+    "react/prop-types": "off",
+    "no-return-assign": "off",
+    "lines-between-class-members": "off",
+    "prefer-arrow-callback": "off",
+    "func-names": "off",
+    "object-shorthand": [2, "always", { "ignoreConstructors": true }],
+    "class-methods-use-this": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

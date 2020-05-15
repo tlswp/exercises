@@ -37,7 +37,33 @@ const state = store({
       category: 'vegetable',
     },
   ],
-  productsSort: [],
+  productsSort() {
+    const productsSorted = [];
+    this.products.forEach((product) => {
+      switch (product.category) {
+        case 'fruit':
+          if (this.filters.isFruitChecked) {
+            productsSorted.push(product);
+          }
+          break;
+        case 'vegetable':
+          if (this.filters.isVegetablesChecked) {
+            productsSorted.push(product);
+          }
+          break;
+        case 'canned':
+          if (this.filters.isCannedChecked) {
+            productsSorted.push(product);
+          }
+          break;
+        default:
+          break;
+      }
+    });
+    this.productsSorted = productsSorted;
+  },
+  productsSorted: [],
+  sortingType: 'asc',
 });
 
 export default state;

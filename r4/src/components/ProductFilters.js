@@ -1,7 +1,7 @@
 import React from 'react';
 import Checkbox from './Checkbox';
 import { view } from '@risingstack/react-easy-state';
-import state from '../store.js';
+import state from '../store';
 
 class ProductFilters extends React.Component {
   render() {
@@ -21,25 +21,25 @@ class ProductFilters extends React.Component {
         <Checkbox
           label="Фрукты"
           checked={state.filters.isFruitChecked}
-          onChange={() =>
-            (state.filters.isFruitChecked = !state.filters.isFruitChecked)
-          }
+          onChange={() => {
+            state.filters.isFruitChecked = !state.filters.isFruitChecked;
+          }}
         />
         <Checkbox
           label="Овощи"
           checked={state.filters.isVegetablesChecked}
-          onChange={() =>
-            (state.filters.isVegetablesChecked = !state.filters
-              .isVegetablesChecked)
-          }
+          onChange={() => {
+            state.filters.isVegetablesChecked = !state.filters
+              .isVegetablesChecked;
+          }}
         />
         <Checkbox
           label="Консервы"
           checked={state.filters.isCannedfoodChecked}
-          onChange={() =>
-            (state.filters.isCannedfoodChecked = !state.filters
-              .isCannedfoodChecked)
-          }
+          onChange={() => {
+            state.filters.isCannedfoodChecked = !state.filters
+              .isCannedfoodChecked;
+          }}
         />
       </div>
     );
